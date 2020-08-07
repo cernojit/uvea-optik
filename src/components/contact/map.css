@@ -1,0 +1,18 @@
+iframe {
+	width: 100%;
+	height: 430px; 
+	frameborder: 0;
+	border:0;
+	allowfullscreen: true;
+	ariaHidden:"";
+	tabindex:0
+}
+
+#map {
+    height: 430px;
+    width: 100%;
+    background-color: grey;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-bottom: 30px
+}

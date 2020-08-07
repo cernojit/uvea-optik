@@ -1,0 +1,68 @@
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 14px;
+    line-height: 1.81;
+    border-radius: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #415ADD;
+    border-color: #415ADD
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color: #652fff;
+    border-color: #3b00e2
+}
+
+.btn-primary,
+.btn-primary:hover {
+    background-image: #415ADD;
+    background-image: #415ADD;
+    background-image: #415ADD ;
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#415ADD", endColorstr="#415ADD", GradientType=1)
+}
+
+.btn-lg {
+    padding: 11px 30px;
+    font-size: 18px;
+    line-height: 1.33333;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.2s linear
+}
+.hidden {
+  display: none!important;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 27px;
+    border: 1px solid transparent;
+    border-radius: 2px
+}
+
+.alert-success {
+    background-color: #005bff;
+    border-color: #005bff;
+    color: #fff;
+    color: #e6e6e6
+}

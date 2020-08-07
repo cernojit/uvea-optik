@@ -1,0 +1,45 @@
+.background {
+	background-color: #F8F8F8
+}
+
+#icon {
+	width: 200px;
+}
+
+.instaButton {
+    background-image: -webkit-linear-gradient(left, #525AD0, #DD2D75);
+    background-image: -o-linear-gradient(left, #525AD0 0, #DD2D75 100%);
+    background-image: linear-gradient(90deg, #525AD0 0, #DD2D75);
+    background-repeat: repeat-x;
+    width: 250px;
+    border-radius: 10px;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#525AD0", endColorstr="#DD2D75", GradientType=1)
+}
+
+.instaButton:hover {
+	opacity: 0.8;
+	transition: 0.4s linear;
+	cursor: pointer;
+}
+
+/*
+@media screen and (max-width: 991px) { 
+	 start of large tablet styles 
+	#icon {
+		width: 200px;
+	}
+}*/
+/*
+@media screen and (max-width: 767px) {
+	 start of medium tablet styles 
+	#icon {
+		width: 200px;
+	}
+}
+
+/*@media screen and (max-width: 479px) {
+	 start of phone styles 
+	#icon {
+		width: 200px;
+	}
+}*/

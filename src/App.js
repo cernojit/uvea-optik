@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Navbar from './components/navbar/Navbar';
+import ImgContainer from './components/imgContainer/ImgContainer';
+import ProductPage from './components/products/ProductPage';
+import AboutSection from './components/aboutSection/AboutSection';
+import InstagramSection from './components/instagramSection/InstagramSection';
+import ContactSection from './components/contact/ContactSection';
+import Footer from './components/footer/Footer';
+import 'tachyons';
+require('typeface-muli')
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <ImgContainer/>
+      <div className="bg-circle w-100 pa4">
+        <ProductPage/>
+        <AboutSection/>
+      </div>
+      <InstagramSection/>
+      <ContactSection/>
+      <Footer/>
     </div>
   );
 }

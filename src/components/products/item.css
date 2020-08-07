@@ -1,0 +1,30 @@
+.item img{
+	border-top-right-radius: 16px;
+	border-top-left-radius: 16px;
+	z-index: 3
+}
+
+.item:hover {
+	transform: scale(1.05);
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.item {
+	transform: scale(1);
+	transition: 0.5s ease-out;
+}
+
+
+
+
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
+	.item:hover {
+		transform: none;
+	}
+	.item {
+		transform: none;
+	}
+}
+

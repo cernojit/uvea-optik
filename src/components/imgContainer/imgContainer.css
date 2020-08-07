@@ -1,0 +1,58 @@
+
+.img-container h1,
+.img-container h2,
+.img-container p {
+    color: #fff;
+    z-index:1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'
+}
+
+.img-container-background {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 12% 0;
+    background-color: grey;
+}
+
+.img-container {
+    background-image: url('./bgImage.png');
+    position: cover
+}
+
+.img-container h1 {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 991px) { 
+    /* start of large tablet styles */
+    .img-container {
+        background-image: url('./bgImage-large.png')
+    }
+    .img-container h1 {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    .img-container {
+        background-image: url('./bgImage-medium.png')
+    }
+    .img-container h1 {
+        font-size: 80px
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    .img-container {
+        background-image: url('./bgImage-small.png');
+    }
+     .img-container h1 {
+        font-size: 70px
+    }
+}
