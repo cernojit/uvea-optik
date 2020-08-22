@@ -9,11 +9,12 @@ const AboutSection = () => {
 			<div className="tc ttu fw9 pb0-ns v-mid">
 				<h1>O NÁS</h1>
 			</div>
-			<div className="cf ph1-ns pa2 pb2-ns ph1-m">
-				<p className="w-70-ns center fw5 tc w-90-m">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. 
-				Nullam sit amet magna in magna gravida vehicula. Mauris suscipit, 
-				ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. 
-				Etiam commodo dui eget wisi.
+			<div className="cf ph1-ns pa2 pb3-ns ">
+				<p className="w-70-ns w-90-m center fw5 tc lh-copy">V naší oční optice vám odborně změříme zrak, 
+					poradíme s výběrem brýlových obrub a brýlových čoček s ohledem na vaše konkrétní potřeby.
+          Nabízíme široký výběr nejen dioptrických obrub, ale i slunečních brýlí, 
+          pouzder a ostatních doplňků.
+          Klademe důraz na individuální přístup ke každému klientovi.
 				</p>
 			</div>
 			<div className="cf ph1 w-100">

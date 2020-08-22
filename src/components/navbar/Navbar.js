@@ -45,7 +45,7 @@ class NavbarTachyons extends Component {
 			    <img src={Logo} id="icon" className="dib br-100" alt="UVEA optic"/>
 			  </a>
 			  
-			  <div id="menu" className="static-l absolute mt0 pa0-l left-100 db dtc-l v-mid w-40 w-50-s w-100-l w-75-l h-80 tr">
+			  <div id="menu" className="static-l absolute mt0 pa0-l pr4-l left-100 db dtc-l v-mid w-40 w-50-s w-100-l w-75-l h-80 tr">
 			    <a className="link tr tl-l fw6 db dib-l mr4 mr4-l mt4" href="#home" title="Home" onClick={this.hideNav}>Domů</a>
 			    <a className="link tr tl-l fw6 db dib-l mr4 mr4-l mt4" href="#sluzby" title="Služby" onClick={this.hideNav}>Služby</a>
 			    <a className="link tr tl-l fw6 db dib-l mr4 mr4-l mt4" href="#about" title="about" onClick={this.hideNav}>O nás</a>
