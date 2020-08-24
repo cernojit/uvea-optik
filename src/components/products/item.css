@@ -42,7 +42,7 @@
 	height: auto;
 	width: 80%;
 	margin: auto;
-	padding: 20px;
+	padding: 10px;
 	position: relative;
 	border: 1px solid grey;
 	border-radius: 15px;
@@ -57,8 +57,9 @@
 
 .close {
   color: #aaa;
-  float: right;
-  padding: 5px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   font-size: 28px;
   font-weight: bold;
 }
@@ -96,7 +97,7 @@
 	.modal-content {
 		height: auto;
 		width: 90%;
-		padding: 5em;
+		padding: 3em;
 		position: relative;
 		margin: auto;
 	}
