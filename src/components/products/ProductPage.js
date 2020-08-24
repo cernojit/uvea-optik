@@ -97,8 +97,8 @@ const ProductPage = () => {
 			<div id="myModal" className="popup w-100 pa2 bg--white" style={{display:`${display}`}}>
 				<div className="modal-content" >
 				<span className="close " onClick={changeVisibility}>X</span>
-					<h1 className="tc ttu fw9 pb0-ns v-mid mt4 pa2">{products[content].desc}</h1>
-					<div className=" w-80 tl db center lh-copy pa2-ns pa2 mb4-ns">
+					<h1 className="tc ttu fw9 pb0-ns v-mid mt4-ns mt2 pa2">{products[content].desc}</h1>
+					<div className=" w-80-ns w-100 tl db center lh-copy pa2-ns pa0 mb4-ns">
 						{products[content].descLong}
 					</div>
 				</div>

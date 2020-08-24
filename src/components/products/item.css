@@ -48,7 +48,7 @@
 	border-radius: 15px;
 	background-color: white;
   	-webkit-animation-name: animatetop;
-  	-webkit-animation-duration: 0.5;
+  	-webkit-animation-duration: 0.6s;
   	animation-name: animatetop;
  	animation-duration: 0.5s;
  	animation-timing-function: ease-out;
@@ -96,9 +96,12 @@
 	.modal-content {
 		height: auto;
 		width: 90%;
-		padding: 10px;
+		padding: 5em;
 		position: relative;
 		margin: auto;
+	}
+	.modal-content ul {
+		padding: 0px;
 	}
 }
 
