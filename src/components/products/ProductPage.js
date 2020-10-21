@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import Item from './Item.js';
-import Dioptricke from './img/dioptricke.png';
-import Slunecni from  './img/slunecni.png';
-import Cocky from './img/cocky.png';
-import Optika from './img/mereni_zraku.png';
-import Dalsi from './img/dalsi.png';
-import Ordinace from './img/ordinace.png';
+import Dioptricke from './img/dioptricke.jpg';
+import Slunecni from  './img/slunecni.jpg';
+import Cocky from './img/cocky.jpg';
+import Optika from './img/mereni_zraku.jpg';
+import Dalsi from './img/dalsi.jpg';
+import Ordinace from './img/ordinace.jpg';
 import './item.css'
 
 

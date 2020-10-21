@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Logo from './image 12.svg';
+import Logo from './logo.jpg';
 import './navbar.css';
 
 class NavbarTachyons extends Component {

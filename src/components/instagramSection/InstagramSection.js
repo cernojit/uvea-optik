@@ -1,8 +1,8 @@
 import React from 'react';
 import InstaIcon from './img/instaIcon.svg';
-import Insta1 from './img/insta1.png';
-import Insta2 from './img/insta2.png';
-import Insta3 from './img/insta3.png';
+import Insta1 from './img/insta1.jpg';
+import Insta2 from './img/insta2.jpg';
+import Insta3 from './img/insta3.jpg';
 import './instaSection.css';
 
 const InstagramSection = () => {
