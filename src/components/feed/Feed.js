@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
  
-const Example = async () =>  {
+const Example =  () =>  {
     return (
       <FacebookProvider appId="2680676682144272">
         <Page 
