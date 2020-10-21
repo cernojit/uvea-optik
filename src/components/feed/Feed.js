@@ -1,8 +1,7 @@
 import React, { Component} from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
  
-export default class Example extends Component {
-  render() {
+const Example = async () =>  {
     return (
       <FacebookProvider appId="2680676682144272">
         <Page 
@@ -11,6 +10,7 @@ export default class Example extends Component {
         	height="450px"
         	 />
       </FacebookProvider>    
-    );
-  }
+    )
 }
+
+export default Example
