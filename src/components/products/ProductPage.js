@@ -3,8 +3,9 @@ import Item from './Item.js';
 import Dioptricke from './img/dioptricke.png';
 import Slunecni from  './img/slunecni.png';
 import Cocky from './img/cocky.png';
-import Optika from './img/optika.png';
+import Optika from './img/mereni_zraku.png';
 import Dalsi from './img/dalsi.png';
+import Ordinace from './img/ordinace.png';
 import './item.css'
 
 
@@ -23,8 +24,8 @@ const products = [
 		desc: "Sluneční brýle",
 		descLong: 
 			<ul>
-				<li>S výběrem brýlí vám rádi poradíme, sledujeme nové módní trendy, máme pro vás připraveny obruby známých značek - např.: Jaguar, T.Hilfiger, H.Boss, Pepe Jeans, Ray.ban a další..</li>
-				<li>Nabízíme brýlové čočky firmy Essilor, které splňují požadavky našich klientů-čiré, samozabarvovací, tenčené, multifokální, pracovní atd.</li>
+				<li>Nabízíme sluneční brýle známých osvědčených značek např. POLAROID, TOMMY HILFIGER, POINT, ARMANI, CELINE DION, DESPADA, RAY.BAN a další...</li>
+				<li>Na přání zákazníka zhotovíme i dioptrické sluneční brýle.</li>
 			</ul>
 	},
 	{	name: "cocky",
@@ -38,20 +39,32 @@ const products = [
 	},
 	{	name: "optika",
 		img: Optika,
-		desc: "Oční optika",
+		desc: "Měření Zraku",
 		descLong: 
 			<ul className="desc">
 				<li>Provádí optometrista - odborník na měření očních vad.</li>
 				<li>Pomocí objektivního (přístrojového) měření, spojeného se subjektivním měřením (zkušební obruba + skla, další spec.testy)</li>
 				<li>Řešíme problémy s viděním na dálku, čtení, počítač, pracovní vzdálenost.</li>
-				<li>Na měření je vhodné se objednat buď osobně v naší optice, nebo telefonicky na tel. 325 531 216 (ordinace Mudr. Pišlová - každou středu 14:30 - 17:30h)</li>
 				<li>Měření provádíme pouze u klientů od 16 ti let, u mladších klientů provádí měření pouze oční lékař. </li>
+				<li>Na měření je vhodné se objednat buď osobně v naší optice, nebo telefonicky na tel.: <a href="tel:325-531-216">325 531 216</a> (ordinace Mudr. Pišlová - každou středu 14:30 - 17:30h)</li>
+			</ul> 
+	},
+	{ name: "ordinace",
+		img: Ordinace ,
+		desc: "Ordinace MuDr. Pišlová",
+		descLong:
+			<ul className="desc">
+				<li>Objenání na měření přímo v optice nebo na tel.: <a href="tel:325-552-032"> 325 531 216</a> </li>
+				<li> Otevírací doba - každou středu 14:30 - 17:30h</li>
 			</ul> 
 	},
 	{ name: "dalsi",
 		img: Dalsi,
 		desc: "A další...",
-		descLong: ""
+		descLong: <ul className="desc">
+								<li>V nabídce máme též velkou škálu doplňků k brýlím </li>
+								<li> pouzdra, čistící preje, šňůrky, a další...</li>
+							</ul>
 	}
 ]
 
@@ -80,8 +93,8 @@ const ProductPage = () => {
 	}
 
 	return (
-		<div className="w-100 border-box pa4-ns ph5-ns ph1-m ph0" id="sluzby">
-			<div className="ttu tc fw9 v-mid pt5-ns pb0-ns pt4">
+		<div className="w-100 border-box pa4-ns ph5-ns ph1-m ph0" id="productPage">
+			<div className="ttu tc fw9 v-mid pt3-ns pb0-ns pt4">
 				<h1>CO VÁM NABÍDNEME?</h1>
 			</div>
 			<div className="cf ph2-ns ph0-m pa2 w-100 pa0-m">

@@ -1,8 +1,8 @@
 import React from 'react';
-import Form from './form/Form';
 import ContactInfo from './ContactInfo';
 import Map from './Map';
 import OteviraciDoba from './OteviraciDoba'
+import Feed from '../feed/Feed'
 
 const ContactSection = () => {
 	return(
@@ -16,15 +16,15 @@ const ContactSection = () => {
           		<Map/>
           	</div>
 	        </div>
-				<div className="cf ph2-ns ph0 pa2 ph5-m pb5 center">
-					<div className="fl w-100 w-third-l pa3 ph4-m ph2-s tl-l tc">
-	        	<Form/>
-	       	</div>
-					<div className="fl w-100 w-third-ns w-50-m pa3 pl4-l tl-ns tc">
+				<div className="cf ph2-ns ph0 pa2 ph7-m pb5 center">
+		      <div className="fl w-100 w-100-m w-40-ns pa3 pb4-m tc">
+	        	<OteviraciDoba/>
+		      </div>
+					<div className="fl w-100 w-100-m w-20-ns pa3 pb4-m tc">
 	        	<ContactInfo/>
 		      </div>
-		      <div className="fl w-100 w-third-ns w-50-m pa3 tl-ns tc">
-	        	<OteviraciDoba/>
+		      <div className="fr w-100 w-100-m w-40-ns pa3 pb4-m tc">
+	        	<Feed/>
 		      </div>
 				</div>
 			</div>

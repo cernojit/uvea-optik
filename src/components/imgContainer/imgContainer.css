@@ -8,22 +8,21 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'
 }
 
-.img-container-background {
+.img-container {
     position: relative;
+    background-image: url('./bgImage.png');    
+    background-color: grey;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    padding: 12% 0;
+    padding: 3% 0 20% 0;
     background-color: grey;
+    max-height: 800px;
 }
 
-.img-container {
-    background-image: url('./bgImage.png');
-    position: cover
-}
 
 .img-container h1 {
-    font-size: 96px;
+    font-size: 80px;
     font-weight: bold;
 }
 
@@ -51,8 +50,10 @@
     /* start of phone styles */
     .img-container {
         background-image: url('./bgImage-small.png');
+        opacity: 0.9;
     }
      .img-container h1 {
         font-size: 70px
     }
+
 }

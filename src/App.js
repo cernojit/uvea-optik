@@ -13,6 +13,7 @@ require('typeface-muli')
 
 function App() {
   return (
+    
     <div className="App">
       <Navbar/>
       <ImgContainer/>

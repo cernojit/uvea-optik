@@ -14,10 +14,16 @@ code {
     monospace;
 }
 
+h1 {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+    font-weight: 600
+}
+
 .bg-circle {
 	background: 
 		url(elipse.png) left 60px no-repeat,
-		url(elipse2.png) right 950px no-repeat;
+		url(elipse2.png) right 1300px no-repeat;
 	/*margin-top: 50px;*/
 	background-size: 60%; 
 	z-index: 2

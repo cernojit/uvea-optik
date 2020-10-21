@@ -3,10 +3,11 @@ import './imgContainer.css'
 
 const ImgContainer = () => {
 	return(
-		<div className="img-container img-container-background h-80 bg-center relative" id ="home">
-	            <div className="ph6-l w-100 pa4 pa2-ns pb6-ns pa6-m ph5-m ph4">
-		                <h1 className="lh-solid white ">UVEA OPTIK</h1>
-		                <p className="f1-ns f2 lh-title fw7 w-50-ns w-80-m w-100">Brýle, dioptrické brýle, čočky, oční optika
+		<div className="img-container h-100-ns h-60 bg-center" id ="home">
+	            <div className="ph6-l w-100 pa2-ns mt0-ns pt0-ns pb6-ns pa2-m ph5-m ph4 ">
+		                <h1 className="lh-solid white mb0 pt2 pt0-ns">UVEA OPTIK</h1>
+										<p className="f2-ns f3 lh-solid white mt0 ">Vanda Schneibergová</p>
+		                <p className="f2-ns f2 fw7 w-50-ns w-90-m w-100 mt0">Dioptrické brýle, sluneční brýle, kontaktní čočky, měření zraku, ...
 		                </p>
 	            </div>
 		</div>

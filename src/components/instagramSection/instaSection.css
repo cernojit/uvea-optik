@@ -21,25 +21,3 @@
 	transition: 0.4s linear;
 	cursor: pointer;
 }
-
-/*
-@media screen and (max-width: 991px) { 
-	 start of large tablet styles 
-	#icon {
-		width: 200px;
-	}
-}*/
-/*
-@media screen and (max-width: 767px) {
-	 start of medium tablet styles 
-	#icon {
-		width: 200px;
-	}
-}
-
-/*@media screen and (max-width: 479px) {
-	 start of phone styles 
-	#icon {
-		width: 200px;
-	}
-}*/
