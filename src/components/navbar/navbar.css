@@ -19,7 +19,7 @@
 
 .nav-tach #icon {
 	width: auto;
-	height: 150%;
+	height: 100%;
 }
 
 .left-100 {
@@ -42,8 +42,6 @@
 		float: left;
 		width: 0px;
 	}
-
-
 }
 
 #menu {
