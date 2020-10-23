@@ -34,7 +34,7 @@ const products = [
 		descLong: 
 			<ul>
 				<li>Aplikaci kontaktních čoček provádíme u klientů od 16 ti let.</li>
-				<li>Při první konzultaci poradíme s výběrem vhodného typu kontaktních čoček a poté naučíme vše potřebné - nasazení, vyndání a péče o kontaktní čočky.</li>
+				<li>Při první konzultaci poradíme s výběrem vhodného typu kontaktních čoček a poté naučíme vše potřebné - nasazení, vyjmutí a péče o kontaktní čočky.</li>
 			</ul>
 	},
 	{	name: "optika",
@@ -54,7 +54,7 @@ const products = [
 		desc: "Ordinace MuDr. Pišlová",
 		descLong:
 			<ul className="desc">
-				<li>Objenání na měření přímo v optice nebo na tel.: <a href="tel:325-552-032"> 325 531 216</a> </li>
+				<li>Objenání na lékařské vyšetření přímo v optice nebo na tel.: <a href="tel:325-552-032"> 325 531 216</a> </li>
 				<li> Otevírací doba - každou středu 14:30 - 17:30h</li>
 			</ul> 
 	},
