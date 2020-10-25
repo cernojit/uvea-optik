@@ -9,7 +9,7 @@ const Example =  () =>  {
 		})
 
     return (
-    	<FacebookProvider appId="2680676682144272">
+    	<FacebookProvider appId=process.env.facebookAppID>
     	{
     		loaded
     		?
