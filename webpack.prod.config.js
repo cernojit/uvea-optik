@@ -80,10 +80,6 @@ module.exports = {
             filename: 'index.html',
             template: './public/index.html'
         }),
-        new Dotenv({
-            path: './.env',
-            save: true
-                
-        })
+        new Dotenv()
     ]
 };
