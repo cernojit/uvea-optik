@@ -74,9 +74,6 @@ module.exports = {
             }
         ]
     },
-    env: {
-        'FB_ID': process.env.FB_ID
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
@@ -86,6 +83,9 @@ module.exports = {
         new Dotenv({
             path: './.env',
             save: true
+        }),
+        new webpack.DefinePlugin({
+            'process.env.FB_ID': JSON.stringify(process.env.FB_ID)
         })
     ]
 };
