@@ -74,9 +74,6 @@ module.exports = {
             }
         ]
     },
-    env: {
-        FB_ID: process.env.FB_ID
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
@@ -84,7 +81,8 @@ module.exports = {
             template: './public/index.html'
         }),
         new Dotenv({
-            path: './.env'
+            path: './.env',
+            save: true
         })
     ]
 };

@@ -67,7 +67,7 @@ module.exports = {
             template: './public/index.html'
         }),
         new Dotenv({
-            path: './.env.local',
+            path: './.env',
             save: true
                 
         })
