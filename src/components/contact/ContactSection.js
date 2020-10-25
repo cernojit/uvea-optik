@@ -16,7 +16,7 @@ const ContactSection = () => {
           		<Map/>
           	</div>
 	        </div>
-				<div className="cf ph2-ns ph0 pa2 ph7-m pb5 center">
+				<div className="cf ph2-ns ph0 pa2 ph6-m pb5 center">
 		      <div className="fl w-100 w-100-m w-40-ns pa3 pb4-m tc">
 	        	<OteviraciDoba/>
 		      </div>
