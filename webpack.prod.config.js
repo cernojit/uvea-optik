@@ -1,12 +1,9 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const Dotenv = require('dotenv-webpack');
+const Dotenv = require('dotenv-webpack');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const webpack = require('webpack');
-const dotenv = require('dotenv').config({
-  path: path.join(__dirname + '/.env')
-});
 
 module.exports = {
     entry: {
@@ -91,8 +88,9 @@ module.exports = {
             template: './public/index.html'
         }),
         new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
-        new webpack.DefinePlugin({
-              "process.env": dotenv
-        })
+        new Dotenv({
+            path: './.env', // Path to .env file (this is the default)
+            safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
+        });
     ]
 };
