@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const Dotenv = require('dotenv-webpack');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const webpack = require('webpack');
-const dotenv = require('dotenv').config( {
-  path: path.join(__dirname, '.env')
-} );
+const dotenv = require('dotenv').config({
+  path: path.join(__dirname + '/.env')
+});
 
 module.exports = {
     entry: {
