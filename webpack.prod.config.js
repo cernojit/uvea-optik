@@ -88,8 +88,8 @@ module.exports = {
         }),
         new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
         new Dotenv({
-            path: __dirname + '/.env',
-            save: true
+            path: './.env',
+            safe: true
         })
     ]
 };
