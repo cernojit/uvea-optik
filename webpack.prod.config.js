@@ -85,10 +85,10 @@ module.exports = {
             filename: 'index.html',
             template: './public/index.html'
         }),
+        new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
         new Dotenv({
             path: './.env',
             save: true
-        }),
-        new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico')
+        })
     ]
 };
