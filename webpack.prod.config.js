@@ -92,7 +92,7 @@ module.exports = {
         }),
         new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
         new webpack.DefinePlugin({
-              "process.env": dotenv.parsed
+              "process.env": dotenv
         })
     ]
 };
