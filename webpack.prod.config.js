@@ -2,8 +2,7 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const webpack = require('webpack');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -91,6 +90,6 @@ module.exports = {
         new Dotenv({
             path: './.env', // Path to .env file (this is the default)
             safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
-        });
+        })
     ]
 };
