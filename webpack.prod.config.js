@@ -76,8 +76,12 @@ module.exports = {
             {
                 test: /\.ico$/, 
                 loader: 'file-loader?name=[name].[ext]'
-            }
+            },
+
         ]
+    },
+    env: {
+        FB_ID: process.env.FB_ID,
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -87,7 +91,7 @@ module.exports = {
         }),
         new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
         new Dotenv({
-            path: './.env',
+            path: __dirname + '/.env',
             save: true
         })
     ]
