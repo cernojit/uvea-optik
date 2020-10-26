@@ -5,15 +5,12 @@ const Example =  () =>  {
 
     return (
     	<FacebookProvider appId={process.env.FB_ID}>
-    	
-		        <Page 
-		        	href="https://www.facebook.com/UVEAoptik" 
-		        	tabs="timeline"
-		        	height="450px"
-		        	 />
-    	
+        <Page 
+        	href="https://www.facebook.com/UVEAoptik" 
+        	tabs="timeline"
+        	height="450px"
+        	 />
 			</FacebookProvider>  
-        
     )
 }
 
