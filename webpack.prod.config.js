@@ -80,9 +80,6 @@ module.exports = {
 
         ]
     },
-    env: {
-        FB_ID: process.env.FB_ID,
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({

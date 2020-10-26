@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predev": "vercel env pull .env",
     "build": "webpack --config webpack.prod.config.js",
     "dev": "webpack-dev-server --config webpack.dev.config.js",
     "test": "react-scripts test",
