@@ -2,6 +2,8 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+
 
 module.exports = {
     entry: path.resolve(__dirname, "./src/index.js"),
@@ -57,6 +59,10 @@ module.exports = {
                     },
                   },
                 ],
+            },
+            {
+                test: /\.ico$/, 
+                loader: 'file-loader?name=[name].[ext]'
             }
         ]
     },
@@ -70,7 +76,8 @@ module.exports = {
             path: './.env',
             save: true
                 
-        })
+        }),
+        new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico')
     ]
 
 };
