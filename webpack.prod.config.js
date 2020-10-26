@@ -21,9 +21,6 @@ module.exports = {
         index: 'index.html',
         port: 9000
     },
-    env: {
-        'FB_ID': process.env.FB_ID
-      },
     module: {
         rules: [
             {
