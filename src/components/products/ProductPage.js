@@ -54,7 +54,7 @@ const products = [
 		desc: "Ordinace MuDr. Pišlová",
 		descLong:
 			<ul className="desc">
-				<li>Objenání na lékařské vyšetření přímo v optice nebo na tel.: <a href="tel:325-552-032"> 325 531 216</a> </li>
+				<li>Objednání na lékařské vyšetření přímo v optice nebo na tel.: <a href="tel:325-552-032"> 325 531 216</a> </li>
 				<li> Otevírací doba - každou středu 14:30 - 17:30h</li>
 			</ul> 
 	},
