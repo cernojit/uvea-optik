@@ -5,7 +5,7 @@ import './aboutSection.css'
 
 const AboutSection = () => {
 	return (
-		<div className="w-100 border-box pa4-ns ph5-ns ph2-m pt2-ns" id="about">
+		<div className="w-100 border-box pa4-ns ph5-ns ph2-m pt2-ns pb4" id="about">
 			<div className="tc ttu fw9 pb0-ns v-mid">
 				<h1>O NÁS</h1>
 			</div>

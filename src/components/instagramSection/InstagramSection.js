@@ -23,7 +23,7 @@ const InstagramSection = () => {
 				</div>
 			</div>
 			<div className="w-100 pa2 mt3-ns tc"> 
-				<a href='https://www.instagram.com/uvea_optik/' className="instaButton pa3 no-underline db center tc white fw8 w-100 w-30-ns">Podívat se na profil
+				<a href='https://www.instagram.com/uvea_optik/' className="instaButton pa3 no-underline db center tc white fw8 ">Podívat se na profil
 				</a>
 			</div>
 		</div>

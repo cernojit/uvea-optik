@@ -41,7 +41,7 @@ class NavbarTachyons extends Component {
 	render(){
 		return(
 			<nav className="nav-tach dt dt--fixed w-100 border-box ph4 pa2 pa1-l ph4-l"  id="navbar">
-				<a className="icon dtc v-mid link w-25 tc " href="#navbar" title="Home">
+				<a className="icon dtc v-mid link tc w-25" href="#navbar" title="Home">
 			    <img src={Logo} id="icon" className="dib" alt="UVEA optic"/>
 			  </a>
 			  
