@@ -17,11 +17,11 @@ const AddCard = () => {
 					<p className="tl fw8-ns f4-ns fw7 f6 ">Spolupracujeme se společností Essilor, která nám dodává brýlové čočky.</p>
 				</div>
 			</div>
-			<div className="flex pa4-ns items-center pb4-ns pb4">
-				<picture className="w-100">
-					<source media="(min-width: 451px)" srcSet={baner} type="image/jpg" className="br4" />
-					<source media="(max-width: 450px)" srcSet={baner_small} type="image/jpg" className="w-100 br4" />
-					<img src={baner} className="br4" />
+			<div className="flex pa4-ns w-100-ns items-center pb4-ns pb4">
+				<picture >
+					<source media="(min-width: 451px)" srcSet={baner} type="image/jpg" className="br4 w-100" />
+					<source media="(max-width: 450px)" srcSet={baner_small} type="image/jpg" className="w-100 br4 w-100" />
+					<img src={baner} className="br4 w-100" />
 				</picture>
 			</div>
 			<div className="w-100 pa2 mt3-ns tc "> 
