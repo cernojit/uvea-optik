@@ -42,69 +42,6 @@ const ContactSection = () => {
           </div>
       </div>
       {/* <---- Extra info ends here */}
-<<<<<<< HEAD
-      <div className="dt dt--fixed pt2">
-      	<div className="dtc tc pv2">
-          <p className="fw7">Pondělí</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>9.00-12.00</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>13.00-17.00</p>
-        </div>
-      </div>
-      <div className="dt dt--fixed ">
-      	<div className="dtc tc pv2">
-          <p className="fw7">Úterý</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>9.00-12.00</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>13.00-17.00</p>
-        </div>
-      </div>
-      <div className="dt dt--fixed ">
-      	<div className="dtc tc pv2">
-          <p className="fw7">Středa</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>9.00-12.00</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>13.00-17.00</p>
-        </div>
-      </div>
-      <div className="dt dt--fixed ">
-      	<div className="dtc tc pv2">
-          <p className="fw7">Čtvrter</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>9.00-12.00</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>13.00-17.00</p>
-        </div>
-      </div>
-      <div className="dt dt--fixed ">
-      	<div className="dtc tc pv2">
-          <p className="fw7">Pátek</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>9.00-12.00</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>13.00-15.00</p>
-        </div>
-      </div>
-      <div className="dt dt--fixed ">
-      	<div className="dtc tc pv2">
-          <p className="fw7">Sobota</p>
-        </div>
-        <div className="dtc tc pv2">
-          <p>9.00-11.00</p>
-=======
 
       <div className="dt dt--fixed ">
       	<div className="dtc tc pv0 ">
@@ -169,7 +106,6 @@ const ContactSection = () => {
           <p className="f5-ns f6">9.00-11.00</p>
         </div>
         <div className="dtc tc pv0">
->>>>>>> opening hours changes
         </div>
       </div>
   	</div>
