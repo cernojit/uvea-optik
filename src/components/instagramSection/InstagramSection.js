@@ -7,7 +7,7 @@ import './instaSection.css';
 
 const InstagramSection = () => {
 	return (
-		<div className="w-100 border-box pa4-ns ph5-ns ph2-m ph5 pt5 background pb5-ns pb4 tc">
+		<div className="w-100  pa4-ns ph5-ns ph3 ph2-m pt2-ns pb5-ns pb4 tc border-box background">
 			<div className="center pa4">
 				<img src={InstaIcon} id="icon" alt="instaIcon" className="db center tc "/>
 			</div>
@@ -22,7 +22,7 @@ const InstagramSection = () => {
 					<img src={Insta3} id="insta3" alt="insta" className="br4 h-100-ns " width="350px" href='https://www.instagram.com/uvea_optik/'/>
 				</div>
 			</div>
-			<div className="w-100 pa2 mt3-ns tc"> 
+			<div className="w-100 pa2 mt3-ns tc mt2"> 
 				<a href='https://www.instagram.com/uvea_optik/' className="instaButton pa3 no-underline db center tc white fw8 ">Podívat se na profil
 				</a>
 			</div>

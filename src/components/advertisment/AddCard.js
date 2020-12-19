@@ -6,7 +6,7 @@ import './add.css'
 
 const AddCard = () => {
 	return (
-		<div className="w-100  pa4-ns ph5-ns ph1 ph2-m pt2-ns pb5-ns pb4 tc" id="advertisment">
+		<div className="w-100 pa4-ns ph5-ns ph1 ph2-m pt2-ns pb5-ns pb4 tc" id="advertisment">
 			<div className="flex pa4-ns pb3-ns items-center pa2 ">
 				<div className="fl mr5-ns mr3 ">
 					<a href="https://www.essilor.cz/">
