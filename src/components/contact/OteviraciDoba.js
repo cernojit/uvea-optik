@@ -45,66 +45,66 @@ const ContactSection = () => {
       </div>
 
       {/* <---- Extra info ends here */}
-      <div className="db pt2">
-      	<div className="fl w-third ">
+      <div className="dt dt--fixed pt2">
+      	<div className="dtc tc pv2">
           <p className="fw7">Pondělí</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>9.00-12.00</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>13.00-17.00</p>
         </div>
       </div>
-      <div className="db ">
-      	<div className="fl w-third ">
+      <div className="dt dt--fixed ">
+      	<div className="dtc tc pv2">
           <p className="fw7">Úterý</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>9.00-12.00</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>13.00-17.00</p>
         </div>
       </div>
-      <div className="db ">
-      	<div className="fl w-third ">
+      <div className="dt dt--fixed ">
+      	<div className="dtc tc pv2">
           <p className="fw7">Středa</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>9.00-12.00</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>13.00-17.00</p>
         </div>
       </div>
-      <div className="db ">
-      	<div className="fl w-third ">
+      <div className="dt dt--fixed ">
+      	<div className="dtc tc pv2">
           <p className="fw7">Čtvrter</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>9.00-12.00</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>13.00-17.00</p>
         </div>
       </div>
-      <div className="db ">
-      	<div className="fl w-third ">
+      <div className="dt dt--fixed ">
+      	<div className="dtc tc pv2">
           <p className="fw7">Pátek</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>9.00-12.00</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>13.00-15.00</p>
         </div>
       </div>
-      <div className="db ">
-      	<div className="fl w-third ">
+      <div className="dt dt--fixed ">
+      	<div className="dtc tc pv2">
           <p className="fw7">Sobota</p>
         </div>
-        <div className="fl w-third ">
+        <div className="dtc tc pv2">
           <p>9.00-11.00</p>
         </div>
       </div>
