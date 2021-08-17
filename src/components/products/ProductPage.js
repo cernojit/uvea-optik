@@ -71,23 +71,19 @@ const products = [
 const ProductPage = () => {
 
 	const [display, setDisplay] = useState('none')
-	const [position, setPosition] = useState(800);
 	const [content, setContent] = useState(0)
 
 	const changeVisibility = (index) => {
 		if(display === 'none'){
-			setPosition(0)
 			setDisplay('block')
 			setContent(index)
 		} else {
-			setPosition(800);
 			setDisplay('none')
 		}
 	}
 
 	window.onclick = function(event) {
-  if (event.target == document.getElementById("myModal")) {
-			setPosition(800);
+  if (event.target === document.getElementById("myModal")) {
 			setDisplay('none')
 	  }
 	}

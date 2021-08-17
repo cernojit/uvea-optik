@@ -21,33 +21,33 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
-                use: [
-                    'file-loader'
-                ]
+                test: /\.(png|jpg|woff|woff2)$/i,
+                type: 'asset/resource'
             },
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader', 'css-loader'
-                ]
+                    'style-loader', 
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 2,
+                            url: true,
+                        }
+                    }
+                ],
+                type: 'javascript/auto'
             },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                use: {
+                use: [{
                     loader: 'babel-loader',
                     options: {
                         presets: [ '@babel/preset-react' ],
                         plugins: [ '@babel/plugin-proposal-class-properties' ]
                     }
-                }
-            },
-            {
-                test: /\.(woff|woff2)$/,
-                use: {
-                  loader: 'url-loader',
-              }
+                }]
             },
             {
                 test: /\.svg$/,
@@ -62,7 +62,9 @@ module.exports = {
             },
             {
                 test: /\.ico$/, 
-                loader: 'file-loader?name=[name].[ext]'
+                use: [{
+                    loader: 'file-loader?name=[name].[ext]'
+                }]
             }
         ]
     },
@@ -73,7 +75,7 @@ module.exports = {
             template: './public/index.html'
         }),
         new Dotenv({
-            path: './.env',
+            path: './.env.production.local',
             save: true
         }),
         new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico')

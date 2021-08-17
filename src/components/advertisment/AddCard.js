@@ -10,7 +10,7 @@ const AddCard = () => {
 			<div className="flex pa4-ns pb3-ns items-center pa2 ">
 				<div className="fl mr5-ns mr3 ">
 					<a href="https://www.essilor.cz/">
-						<img src={logo} className="w-100" />
+						<img src={logo} className="w-100" alt='logo'/>
 					</a>
 				</div>
 				<div className="fl">
@@ -21,7 +21,7 @@ const AddCard = () => {
 				<picture >
 					<source media="(min-width: 480px)" srcSet={baner} type="image/jpg" className="br4 w-100" />
 					<source media="(max-width: 479px)" srcSet={baner_small} type="image/jpg" className="w-100 br4 w-100" />
-					<img src={baner} className="br4 w-100" />
+					<img src={baner} className="br4 w-100" alt='baner'/>
 				</picture>
 			</div>
 			<div className="w-100 pa2 mt3-ns tc "> 

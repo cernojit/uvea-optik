@@ -3,7 +3,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-// require('dotenv').config()
 const webpack = require('webpack')
 
 
@@ -16,7 +15,7 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         publicPath: ''
     },
-    mode: 'development',
+    mode: 'production',
     devServer: {
         contentBase: path.resolve(__dirname, './dist'),
         index: 'index.html',
@@ -25,10 +24,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
-                use: [
-                    'file-loader'
-                ]
+                test: /\.(png|jpg|woff|woff2)$/i,
+                type: 'asset/resource'
             },
             {
                 test: /\.css$/,
@@ -45,25 +42,19 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
+                use: [{
                     loader: 'babel-loader',
                     options: {
                         presets: [ '@babel/preset-react' ],
                         plugins: [ '@babel/plugin-proposal-class-properties' ]
                     }
-                }
+                }]
             },
             {
                 test: /\.hbs$/,
-                use: [
-                    'handlebars-loader'
-                ]
-            },
-            {
-                test: /\.(woff|woff2)$/,
-                use: {
-                  loader: 'url-loader',
-              }
+                use: [{
+                    loader: 'handlebars-loader'
+                }]
             },
             {
                 test: /\.svg$/,
@@ -77,8 +68,10 @@ module.exports = {
                 ],
             },
             {
-                test: /\.ico$/, 
-                loader: 'file-loader?name=[name].[ext]'
+                test: /favicon\.ico$/, 
+                use : [{
+                    loader: 'file-loader',
+                }],
             },
 
         ]
@@ -87,15 +80,14 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './public/index.html'
+            template: './public/index.html',
+            favicon: './public/favicon.ico'
         }),
         new Dotenv({
-            path: './.env', // Path to .env file (this is the default)
-            safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
+            path: path.resolve(__dirname + '/.env'), // Path to .env file (this is the default)
         }),
-        new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
         new webpack.DefinePlugin({
-            'process.env.FB_ID': JSON.stringify(process.env.FB_ID)
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         }),
     ]
 };

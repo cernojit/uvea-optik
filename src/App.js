@@ -11,10 +11,8 @@ import Footer from './components/footer/Footer';
 import 'tachyons';
 require('typeface-muli');
 
-
 function App() {
   return (
-    
     <div className="App">
       <Navbar/>
       <ImgContainer/>
