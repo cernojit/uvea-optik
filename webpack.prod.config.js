@@ -2,30 +2,21 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-// require('dotenv').config()
 const webpack = require('webpack')
 
 
 module.exports = {
-    entry: {
-        'index': './src/index.js'
-    },
+    mode: 'production',
+    entry:  "./src/index.js",
     output: {
-        filename: '[name].bundle.js',
+        filename: '[fullhash].bundle.js',
         path: path.resolve(__dirname, './dist'),
-        publicPath: ''
-    },
-    mode: 'development',
-    devServer: {
-        contentBase: path.resolve(__dirname, './dist'),
-        index: 'index.html',
-        port: 9000
     },
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg|ico)$/,
+                exclude: /node_modules/,
                 use: [
                     'file-loader'
                 ]
@@ -76,26 +67,22 @@ module.exports = {
                   },
                 ],
             },
-            {
-                test: /\.ico$/, 
-                loader: 'file-loader?name=[name].[ext]'
-            },
-
         ]
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './public/index.html'
+            template: './public/index.html',
+            favicon: './public/favicon.png'
         }),
         new Dotenv({
-            path: './.env', // Path to .env file (this is the default)
-            safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
-        }),
-        new FaviconsWebpackPlugin(__dirname + '/public/favicon.ico'),
-        new webpack.DefinePlugin({
-            'process.env.FB_ID': JSON.stringify(process.env.FB_ID)
+            path: '.env', // Path to .env file (this is the default)
+            safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
+            allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
+            systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
+            silent: true, // hide any errors
+            defaults: false // load '.env.defaults' as the default values if empty.
         }),
     ]
 };

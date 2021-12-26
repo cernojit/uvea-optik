@@ -8,13 +8,12 @@ import AddCard from './components/advertisment/AddCard';
 import InstagramSection from './components/instagramSection/InstagramSection';
 import ContactSection from './components/contact/ContactSection';
 import Footer from './components/footer/Footer';
-import 'tachyons';
-require('typeface-muli');
-
+import 'tachyons'
+require('typeface-muli')
+require('./favicon.png')
 
 function App() {
   return (
-    
     <div className="App">
       <Navbar/>
       <ImgContainer/>
