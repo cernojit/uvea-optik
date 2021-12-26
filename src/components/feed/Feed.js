@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
- 
-const Example =  () =>  {
 
+const Feed =  () =>  {
     return (
     	<FacebookProvider appId={process.env.FB_ID}>
         <Page 
@@ -14,4 +13,4 @@ const Example =  () =>  {
     )
 }
 
-export default Example
+export default Feed
