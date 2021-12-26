@@ -77,7 +77,7 @@ module.exports = {
             favicon: './public/favicon.png'
         }),
         new Dotenv({
-            path: '.env', // Path to .env file (this is the default)
+            path: './.env', // Path to .env file (this is the default)
             safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
             allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
             systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
