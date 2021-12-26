@@ -10,7 +10,6 @@ import ContactSection from './components/contact/ContactSection';
 import Footer from './components/footer/Footer';
 import 'tachyons'
 require('typeface-muli')
-require('./favicon.png')
 
 function App() {
   return (

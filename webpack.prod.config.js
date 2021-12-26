@@ -78,10 +78,10 @@ module.exports = {
         }),
         new Dotenv({
             path: './.env', // Path to .env file (this is the default)
-            safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
+            safe: false, // load .env.example (defaults to "false" which does not use dotenv-safe)
         }),
-        new webpack.DefinePlugin({
+       /*  new webpack.DefinePlugin({
             'process.env.FB_ID': JSON.stringify(process.env.FB_ID),
-        }),
+        }), */
     ]
 };
