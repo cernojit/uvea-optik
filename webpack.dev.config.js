@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 const CopyPlugin = require("copy-webpack-plugin")
 
-
 module.exports = {
     mode: 'development',
     entry: path.resolve(__dirname, "./src/index.js"),
@@ -23,9 +22,11 @@ module.exports = {
         rules: [
             {
                 test: /\.(png|jpg)$/,
-                use: [
-                    'file-loader'
-                ]
+                type: 'asset/resource',
+            },
+            {
+                test: /\.html$/i,
+                use: 'html-loader',
             },
             {
                 test: /\.css$/,
@@ -66,15 +67,10 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: './public/index.html',
-            favicon: "./src/favicon.png"
+            filename:  "index.html",
+            template: path.resolve(__dirname, "", './public/index.html'),
+            favicon:  path.join(__dirname, "", "./src/favicon.png"),
         }),
-        new CopyPlugin({
-            patterns: [
-              { from: "./src/favicon.png"},
-            ],
-          }),
         new Dotenv({
             path: './.env.development', // load this now instead of the ones in '.env'
             safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.

@@ -2,16 +2,13 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
-const webpack = require('webpack')
-var dotenv = require('dotenv').config({path: __dirname + '/.env'})
+const CopyPlugin = require("copy-webpack-plugin")
 
 
 module.exports = () => {
 return {
     mode: 'production',
-    entry:  {
-        'index': './src/index.js'
-    },
+    entry: path.resolve(__dirname, "./src/index.js"),
     output: {
         filename: '[fullhash].bundle.js',
         path: path.resolve(__dirname, './dist'),
@@ -19,11 +16,15 @@ return {
     module: {
         rules: [
             {
-                test: /\.(png|jpg|ico)$/,
-                exclude: /node_modules/,
-                use: [
-                    'file-loader'
-                ]
+                test: /\.(png|jpg)$/,
+                type: 'asset/resource',
+                 generator: {
+                    filename: 'images/[name]-[hash][ext]',
+                    },
+            },
+            {
+                test: /\.html$/i,
+                use: 'html-loader',
             },
             {
                 test: /\.css$/,
@@ -76,16 +77,20 @@ return {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: './public/index.html',
-            favicon: './public/favicon.png'
+            filename:  "index.html",
+            template: path.resolve(__dirname, "", './public/index.html'),
+            favicon:  path.join(__dirname, "", "./src/favicon.png"),
         }),
+        new CopyPlugin({
+            patterns: [
+              { from: "./src/favicon.png",
+              to: "static"
+              },
+            ],
+          }),
         new Dotenv({
             path: './.env', // Path to .env file (this is the default)
             safe: false, // load .env.example (defaults to "false" which does not use dotenv-safe)
-        }),
-        new webpack.DefinePlugin({
-            "process.env": JSON.stringify(dotenv.parsed),
         }),
     ]
 }}

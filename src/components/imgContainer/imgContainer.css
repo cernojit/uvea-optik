@@ -10,8 +10,7 @@
 
 .img-container {
     position: relative;
-    background-image: url('./bgImage.jpg');    
-    background-color: grey;
+    background: url(bgImage_large.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -26,10 +25,10 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 991px) { 
+@media screen and (max-width: 991px) {
     /* start of large tablet styles */
     .img-container {
-        background-image: url('./bgImage-large.jpg')
+        background-image: url('./bgImage_medium.jpg');
     }
     .img-container h1 {
         font-size: 96px;
@@ -39,21 +38,21 @@
 @media screen and (max-width: 767px) {
     /* start of medium tablet styles */
     .img-container {
-        background-image: url('./bgImage-medium.jpg')
+        background-image: url('./bgImage_medium.jpg');
     }
     .img-container h1 {
-        font-size: 80px
+        font-size: 80px;
     }
 }
 
 @media screen and (max-width: 479px) {
     /* start of phone styles */
     .img-container {
-        background-image: url('./bgImage-small.jpg');
+        background-image: url('./bgImage_small.jpg');
         opacity: 0.9;
     }
      .img-container h1 {
-        font-size: 70px
+        font-size: 70px;
     }
 
 }
