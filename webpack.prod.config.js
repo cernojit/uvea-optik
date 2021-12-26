@@ -84,5 +84,8 @@ module.exports = {
             silent: true, // hide any errors
             defaults: false // load '.env.defaults' as the default values if empty.
         }),
+        new webpack.DefinePlugin({
+            'process.env.FB_ID': JSON.stringify(process.env.FB_ID),
+        }),
     ]
 };
