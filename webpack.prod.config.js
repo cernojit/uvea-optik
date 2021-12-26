@@ -1,13 +1,18 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
+/* const Dotenv = require('dotenv-webpack'); */
 const webpack = require('webpack')
+var dotenv = require('dotenv').config({path: __dirname + '/.env'})
 
 
-module.exports = {
+module.exports = () => {
+  
+return {
     mode: 'production',
-    entry:  "./src/index.js",
+    entry:  {
+        'index': './src/index.js'
+    },
     output: {
         filename: '[fullhash].bundle.js',
         path: path.resolve(__dirname, './dist'),
@@ -76,16 +81,8 @@ module.exports = {
             template: './public/index.html',
             favicon: './public/favicon.png'
         }),
-        new Dotenv({
-            path: '.env', // Path to .env file (this is the default)
-            safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
-            allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
-            systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
-            silent: true, // hide any errors
-            defaults: false // load '.env.defaults' as the default values if empty.
-        }),
         new webpack.DefinePlugin({
-            'process.env.FB_ID': JSON.stringify(process.env.FB_ID),
+            "process.env": JSON.stringify(dotenv.parsed),
         }),
     ]
-};
+}}
