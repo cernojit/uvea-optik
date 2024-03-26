@@ -6,7 +6,7 @@ const Feed =  () =>  {
 
 	useEffect(()=>{
 		isLoaded(true)
-	}, [])
+	}, [loaded])
 
 	return (
 		<FacebookProvider appId={process.env.FB_ID}>

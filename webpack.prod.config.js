@@ -2,15 +2,13 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
-const webpack = require('webpack')
-var dotenv = require('dotenv').config({path: __dirname + '/.env'})
 
 
 module.exports = () => {
 return {
     mode: 'production',
     entry:  {
-        'index': './src/index.js'
+        index: './src/index.js'
     },
     output: {
         filename: '[fullhash].bundle.js',
@@ -83,9 +81,6 @@ return {
         new Dotenv({
             path: './.env', // Path to .env file (this is the default)
             safe: false, // load .env.example (defaults to "false" which does not use dotenv-safe)
-        }),
-        new webpack.DefinePlugin({
-            "process.env": JSON.stringify(dotenv.parsed),
         }),
     ]
 }}
